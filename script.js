@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form submission handling
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -16,7 +14,6 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
-// Dynamic year in footer
 document.querySelector(
   "footer p"
 ).textContent = `© ${new Date().getFullYear()} Emmanuel Allotey. All rights reserved.`;

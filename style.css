@@ -250,9 +250,7 @@
           font-size: 2.2rem;
         }
       }
-/* Previous styles remain the same */
 
-/* Resume Section Styles */
 .resume-container {
     background: white;
     padding: 2rem;
@@ -332,7 +330,6 @@
     width: 100%;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .resume-contact {
         flex-direction: column;
@@ -346,8 +343,4 @@
   height: 500px;
   background: white url('images/my_photo.jpg') no-repeat center;
   background-size: cover;
-  background-color: transparent !important; /* Remove any background */
-  border: none !important; /* Remove borders */
-  box-shadow: none !important; /* Remove shadows */
-  padding: 0 !important; /* Remove padding */
 }
