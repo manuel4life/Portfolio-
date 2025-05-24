@@ -346,6 +346,120 @@
 .about-img {
   width: 350px;
   height: 400px;
-  background: white url('images/IMG_2645.jpeg') no-repeat center;
+  background: white url('images/my_photo.jpg') no-repeat center;
   background-size: cover;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.story-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.story-card h3 {
+  padding: 1rem;
+  color: var(--primary);
+}
+
+.story-card p {
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+.simulator-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.simulator-phone {
+  background: #333;
+  border-radius: 30px;
+  padding: 2rem;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.phone-screen {
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 1rem;
+  height: 200px;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  overflow-y: auto;
+}
+
+.phone-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.key {
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.key:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+.simulator-info h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.simulator-info ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .simulator-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .simulator-phone {
+    width: 250px;
+  }
 }
